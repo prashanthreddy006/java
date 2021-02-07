@@ -1,0 +1,39 @@
+
+
+<html style="text-align:center;">
+      <head style="color:red;">
+          <title>Google page</title>
+           <h1>Welcome to Reddy's fruit point!</h1><br><br><br>
+           <script>
+               function myForm()
+               {
+                 // alert("on submit");
+                  var x =document.getElementById("uname").value;
+                  var y =document.getElementById("upass").value;
+                 // alert("x: "+x+", y: "+y);
+
+                  if(x=="prashanth" & y=="9104")
+                  {
+                    //alert("valid");
+                    return true;
+                  }
+                  else
+                  {
+                   // alert("Invalid");
+                    return false;
+                  }
+               }
+            </script>
+      </head>
+      <body>
+          <form action="datalist.html" method="get" onsubmit="return myForm();"><br>
+            <label for="uname">UserId: </label>
+            <input type="text"  id ="uname"> <br><br>
+            <label for="upass">Password: </label>
+            <input type="password"  id="upass"/><br><br>
+            <input type="submit" value="submit">
+          </form> 
+      </body>
+</html>
+
+
